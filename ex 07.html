@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setimo</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        input {
+            font: normal 18pt Arial;
+            max-width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando numeros</h1>
+    <input type="number" name="n01" id="n01"> +
+    <input type="number" name="n02" id="n02">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <ul>
+        <li><a href="ex 08.html">ex8</a></li>
+    </ul>
+    <script>
+        function somar() {
+            var n01 = window.document.getElementById('n01')
+            var n02 = window.document.getElementById('n02')
+            var res = window.document.getElementById('res')
+            var n01 = Number(n01.value)
+            var n02 = Number(n02.value)
+            var s = n01 + n02
+            res.innerHTML = `A soma entre ${n01} e ${n02} é <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

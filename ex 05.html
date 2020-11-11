@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model (DOM)</title>
+    <style>
+        body {
+            background: #a9ee3b;
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Usando <strong>DOM</strong> no Js</p>
+    <div id="msg">Click aqui</div>
+    <ul>
+        <li><a href="ex 06.html">ex6</a></li>
+    </ul>
+     <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.color = 'red'
+       /* var x = window.document.getElementById('msg')[0]           'id'
+        x.style.background = 'black'
+        var x =window.document.getElementsByName('msg')[0]           'Name'
+        x.innerText = 'mudou'
+        var x = window.document.getElementsByClassName('msg')[0]     'Class'
+        x.innerText = ' outro metodo' */
+        x = window.document.querySelector('div#msg')             /*querySelector */
+        x.style.background  = 'blue'
+
+    </script>
+</body>
+</html>
